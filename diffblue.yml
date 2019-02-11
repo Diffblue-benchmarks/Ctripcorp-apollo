@@ -17,6 +17,11 @@ units:
       file: com/ctrip/framework/apollo/common/config/RefreshableConfig.class
       sourceDir: apollo-common/src/main/java
       sourceFile: com/ctrip/framework/apollo/common/config/RefreshableConfig.java
+    # Child of BizConfig.class
+    - dir: apollo-common/target/classes
+      file: com/ctrip/framework/apollo/common/config/RefreshablePropertySource.class
+      sourceDir: apollo-common/src/main/java
+      sourceFile: com/ctrip/framework/apollo/common/config/RefreshablePropertySource.java
 phases:
 -
   timeout: 60
