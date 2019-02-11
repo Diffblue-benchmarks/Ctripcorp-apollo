@@ -52,76 +52,11 @@ units:
       file: com/ctrip/framework/apollo/core/utils/StringUtils.class
       sourceDir: apollo-core/src/main/java
       sourceFile: com/ctrip/framework/apollo/core/utils/StringUtils.java
-  - target:
-    - dir: apollo-portal/target/classes
-      file: com/ctrip/framework/apollo/portal/service/ItemService.class
-      sourceDir: apollo-portal/src/main/java
-      sourceFile: com/ctrip/framework/apollo/portal/service/ItemService.java
     # Child of ItemService.class
-    - dir: apollo-common/target/classes
-      file: com/ctrip/framework/apollo/common/dto/ItemChangeSets.class
-      sourceDir: apollo-common/src/main/java
-      sourceFile: com/ctrip/framework/apollo/common/dto/ItemChangeSets.java
-    # Child of ItemService.class
-    - dir: apollo-common/target/classes
-      file: com/ctrip/framework/apollo/common/dto/ItemDTO.class
-      sourceDir: apollo-common/src/main/java
-      sourceFile: com/ctrip/framework/apollo/common/dto/ItemDTO.java
-    # Child of ItemService.class
-    - dir: apollo-common/target/classes
-      file: com/ctrip/framework/apollo/common/dto/NamespaceDTO.class
-      sourceDir: apollo-common/src/main/java
-      sourceFile: com/ctrip/framework/apollo/common/dto/NamespaceDTO.java
-    # Child of ItemService.class
-    - dir: apollo-core/target/classes
-      file: com/ctrip/framework/apollo/core/enums/ConfigFileFormat.class
-      sourceDir: apollo-core/src/main/java
-      sourceFile: com/ctrip/framework/apollo/core/enums/ConfigFileFormat.java
-    # Child of ItemService.class
-    - dir: apollo-core/target/classes
-      file: com/ctrip/framework/apollo/core/enums/Env.class
-      sourceDir: apollo-core/src/main/java
-      sourceFile: com/ctrip/framework/apollo/core/enums/Env.java
-    # Child of ItemService.class
-    - dir: apollo-portal/target/classes
-      file: com/ctrip/framework/apollo/portal/api/AdminServiceAPI.class
-      sourceDir: apollo-portal/src/main/java
-      sourceFile: com/ctrip/framework/apollo/portal/api/AdminServiceAPI.java
-    # Child of ItemService.class
-    - dir: apollo-portal/target/classes
-      file: com/ctrip/framework/apollo/portal/component/txtresolver/ConfigTextResolver.class
-      sourceDir: apollo-portal/src/main/java
-      sourceFile: com/ctrip/framework/apollo/portal/component/txtresolver/ConfigTextResolver.java
-    # Child of ItemService.class
-    - dir: apollo-portal/target/classes
-      file: com/ctrip/framework/apollo/portal/constant/TracerEventType.class
-      sourceDir: apollo-portal/src/main/java
-      sourceFile: com/ctrip/framework/apollo/portal/constant/TracerEventType.java
-    # Child of ItemService.class
-    - dir: apollo-portal/target/classes
-      file: com/ctrip/framework/apollo/portal/entity/model/NamespaceTextModel.class
-      sourceDir: apollo-portal/src/main/java
-      sourceFile: com/ctrip/framework/apollo/portal/entity/model/NamespaceTextModel.java
-    # Child of ItemService.class
-    - dir: apollo-portal/target/classes
-      file: com/ctrip/framework/apollo/portal/entity/vo/ItemDiffs.class
-      sourceDir: apollo-portal/src/main/java
-      sourceFile: com/ctrip/framework/apollo/portal/entity/vo/ItemDiffs.java
-    # Child of ItemService.class
-    - dir: apollo-portal/target/classes
-      file: com/ctrip/framework/apollo/portal/entity/vo/NamespaceIdentifier.class
-      sourceDir: apollo-portal/src/main/java
-      sourceFile: com/ctrip/framework/apollo/portal/entity/vo/NamespaceIdentifier.java
-    # Child of ItemService.class
-    - dir: apollo-portal/target/classes
-      file: com/ctrip/framework/apollo/portal/spi/UserInfoHolder.class
-      sourceDir: apollo-portal/src/main/java
-      sourceFile: com/ctrip/framework/apollo/portal/spi/UserInfoHolder.java
-    # Child of ItemService.class
-    - dir: apollo-core/target/classes
-      file: com/ctrip/framework/apollo/tracer/Tracer.class
-      sourceDir: apollo-core/src/main/java
-      sourceFile: com/ctrip/framework/apollo/tracer/Tracer.java
+    - dir: apollo-biz/target/classes
+      file: com/ctrip/framework/apollo/biz/config/BizConfig.class
+      sourceDir: apollo-biz/src/main/java
+      sourceFile: com/ctrip/framework/apollo/biz/config/BizConfig.java
 phases:
 -
   timeout: 60
