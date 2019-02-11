@@ -4,16 +4,6 @@ cbmcArguments:
 units:
   - target:
     - dir: apollo-biz/target/classes
-      file: com/ctrip/framework/apollo/biz/message/DatabaseMessageSender.class
-      sourceDir: apollo-biz/src/main/java
-      sourceFile: com/ctrip/framework/apollo/biz/message/DatabaseMessageSender.java
-    # Child of DatabaseMessageSender.class
-    - dir: apollo-biz/target/classes
-      file: com/ctrip/framework/apollo/biz/repository/ReleaseMessageRepository.class
-      sourceDir: apollo-biz/src/main/java
-      sourceFile: com/ctrip/framework/apollo/biz/repository/ReleaseMessageRepository.java
-  - target:
-    - dir: apollo-biz/target/classes
       file: com/ctrip/framework/apollo/biz/config/BizConfig.class
       sourceDir: apollo-biz/src/main/java
       sourceFile: com/ctrip/framework/apollo/biz/config/BizConfig.java
@@ -22,6 +12,11 @@ units:
       file: com/ctrip/framework/apollo/biz/service/BizDBPropertySource.class
       sourceDir: apollo-biz/src/main/java
       sourceFile: com/ctrip/framework/apollo/biz/service/BizDBPropertySource.java
+    # Child of BizConfig.class
+    - dir: apollo-common/target/classes
+      file: com/ctrip/framework/apollo/common/config/RefreshableConfig.class
+      sourceDir: apollo-common/src/main/java
+      sourceFile: com/ctrip/framework/apollo/common/config/RefreshableConfig.java
 phases:
 -
   timeout: 60
