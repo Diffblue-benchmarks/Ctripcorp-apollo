@@ -3,60 +3,30 @@ cbmcArguments:
   java-generate-no-comments: true
 units:
   - target:
-    - dir: apollo-biz/target/classes
-      file: com/ctrip/framework/apollo/biz/service/ItemService.class
-      sourceDir: apollo-biz/src/main/java
-      sourceFile: com/ctrip/framework/apollo/biz/service/ItemService.java
-    # Child of ItemService.class
-    - dir: apollo-biz/target/classes
-      file: com/ctrip/framework/apollo/biz/config/BizConfig.class
-      sourceDir: apollo-biz/src/main/java
-      sourceFile: com/ctrip/framework/apollo/biz/config/BizConfig.java
-    # Child of ItemService.class
-    - dir: apollo-biz/target/classes
-      file: com/ctrip/framework/apollo/biz/entity/Audit.class
-      sourceDir: apollo-biz/src/main/java
-      sourceFile: com/ctrip/framework/apollo/biz/entity/Audit.java
-    # Child of ItemService.class
-    - dir: apollo-biz/target/classes
-      file: com/ctrip/framework/apollo/biz/entity/Item.class
-      sourceDir: apollo-biz/src/main/java
-      sourceFile: com/ctrip/framework/apollo/biz/entity/Item.java
-    # Child of ItemService.class
-    - dir: apollo-biz/target/classes
-      file: com/ctrip/framework/apollo/biz/entity/Namespace.class
-      sourceDir: apollo-biz/src/main/java
-      sourceFile: com/ctrip/framework/apollo/biz/entity/Namespace.java
-    # Child of ItemService.class
-    - dir: apollo-biz/target/classes
-      file: com/ctrip/framework/apollo/biz/repository/ItemRepository.class
-      sourceDir: apollo-biz/src/main/java
-      sourceFile: com/ctrip/framework/apollo/biz/repository/ItemRepository.java
-    # Child of ItemService.class
+    - dir: apollo-portal/target/classes
+      file: com/ctrip/framework/apollo/portal/component/ItemsComparator.class
+      sourceDir: apollo-portal/src/main/java
+      sourceFile: com/ctrip/framework/apollo/portal/component/ItemsComparator.java
+    # Child of ItemsComparator.class
     - dir: apollo-common/target/classes
-      file: com/ctrip/framework/apollo/common/exception/BadRequestException.class
+      file: com/ctrip/framework/apollo/common/dto/ItemChangeSets.class
       sourceDir: apollo-common/src/main/java
-      sourceFile: com/ctrip/framework/apollo/common/exception/BadRequestException.java
-    # Child of ItemService.class
+      sourceFile: com/ctrip/framework/apollo/common/dto/ItemChangeSets.java
+    # Child of ItemsComparator.class
     - dir: apollo-common/target/classes
-      file: com/ctrip/framework/apollo/common/exception/NotFoundException.class
+      file: com/ctrip/framework/apollo/common/dto/ItemDTO.class
       sourceDir: apollo-common/src/main/java
-      sourceFile: com/ctrip/framework/apollo/common/exception/NotFoundException.java
-    # Child of ItemService.class
+      sourceFile: com/ctrip/framework/apollo/common/dto/ItemDTO.java
+    # Child of ItemsComparator.class
     - dir: apollo-common/target/classes
       file: com/ctrip/framework/apollo/common/utils/BeanUtils.class
       sourceDir: apollo-common/src/main/java
       sourceFile: com/ctrip/framework/apollo/common/utils/BeanUtils.java
-    # Child of ItemService.class
+    # Child of ItemsComparator.class
     - dir: apollo-core/target/classes
       file: com/ctrip/framework/apollo/core/utils/StringUtils.class
       sourceDir: apollo-core/src/main/java
       sourceFile: com/ctrip/framework/apollo/core/utils/StringUtils.java
-    # Child of ItemService.class
-    - dir: apollo-biz/target/classes
-      file: com/ctrip/framework/apollo/biz/config/BizConfig.class
-      sourceDir: apollo-biz/src/main/java
-      sourceFile: com/ctrip/framework/apollo/biz/config/BizConfig.java
 phases:
 -
   timeout: 60
